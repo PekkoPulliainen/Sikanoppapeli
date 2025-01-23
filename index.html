@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="/script.js" defer></script>
+    <title>Sikanoppapeli</title>
+  </head>
+  <body>
+    <h1>Sikanoppapeli</h1>
+    <div id="diceselect" class="diceselect">
+      <h2 class="questionText" id="questionText"></h2>
+      <button id="1diebutton" onclick="dieselect()" class="1diebutton">
+        1 Noppa
+      </button>
+      <button id="2dicebutton" onclick="dice2select()" class="2dicebutton">
+        2 Noppaa
+      </button>
+      <input id="inputName" class="inputName" />
+      <div id="almostReady" class="almostReady">
+        <button id="addPlayer" onclick="addPlayer()" class="addPlayer">
+          Lisää pelaaja
+        </button>
+        <button id="startGame" onclick="startGame()" class="startGame">
+          Aloita peli
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
