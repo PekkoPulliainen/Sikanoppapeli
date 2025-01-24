@@ -9,23 +9,35 @@
   </head>
   <body>
     <h1>Sikanoppapeli</h1>
+    <h2 class="questionText" id="questionText"></h2>
     <div id="diceselect" class="diceselect">
       <h2 class="questionText" id="questionText"></h2>
-      <button id="1diebutton" onclick="dieselect()" class="1diebutton">
-        1 Noppa
-      </button>
-      <button id="2dicebutton" onclick="dice2select()" class="2dicebutton">
+      <button id="1diebutton" onclick="dieselect()" class="die1button">
+        1 Noppa</button
+      ><button id="2dicebutton" onclick="dice2select()" class="dice2button">
         2 Noppaa
       </button>
-      <input id="inputName" class="inputName" />
-      <div id="almostReady" class="almostReady">
-        <button id="addPlayer" onclick="addPlayer()" class="addPlayer">
-          Lisää pelaaja
-        </button>
-        <button id="startGame" onclick="startGame()" class="startGame">
-          Aloita peli
-        </button>
-      </div>
+    </div>
+    <input id="inputName" class="inputName" />
+    <div class="addPlayerDiv">
+      <button id="addPlayer" onclick="addPlayer()" class="addPlayer">
+        Lisää pelaaja
+      </button>
+      <button id="startGame" onclick="startGame()" class="startGame">
+        Aloita peli
+      </button>
+    </div>
+    <p id="playerDisplay" class="playerDisplay"></p>
+    <div class="gameStart">
+      <button onclick="rollDice()" id="throwDice" class="throwDice">
+        Heitä noppaa
+      </button>
+      <button onclick="rollAgain()" id="rollAgain" class="rollAgain">
+        Heitä uudestaan
+      </button>
+      <button onclick="dontRoll()" id="dontThrow" class="dontThrow">
+        Älä heitä
+      </button>
     </div>
   </body>
 </html>
