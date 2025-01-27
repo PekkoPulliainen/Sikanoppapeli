@@ -336,3 +336,9 @@ body::after {
   .fil0 {
     fill: #FFFDEF
   }
+
+  .remaster {
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-50%, 50%);
+  }
